@@ -9,9 +9,9 @@ interface BusinessCardProps {
 const BusinessCard = ({ business }: BusinessCardProps) => {
   return (
     <div className={styles.card}>
-      {business.imageUrls.length && (
+      {business.images?.length && (
         <img
-          src={business.imageUrls[0]}
+          src={business.images[0].url}
           alt={business.name}
           className={styles.image}
         />

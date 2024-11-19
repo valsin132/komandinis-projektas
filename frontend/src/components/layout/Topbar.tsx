@@ -41,7 +41,7 @@ const Topbar = () => {
         </nav>
       </div>
       <div className={styles.rightSide}>
-        {user ? (
+        {user && user.name ? (
           <Avatar>{user.name[0]}</Avatar>
         ) : (
           <Button onClick={() => navigate(ROUTES.LOGIN)} large>
