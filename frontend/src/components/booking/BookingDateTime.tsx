@@ -66,7 +66,6 @@ const BookingDateTime = () => {
                 <button
                   type="button"
                   onClick={() => {
-                    console.log("Selected time:", time);
                     setDate((prev) => ({
                       ...prev,
                       dateTime: time,
