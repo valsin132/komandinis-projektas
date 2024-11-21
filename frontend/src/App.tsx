@@ -12,7 +12,7 @@ import AuthLayout from "./components/layout/AuthLayout";
 import RootLayout from "./components/layout/RootLayout";
 import { UserProvider } from "./context/UserContext";
 import Services from "./pages/Services";
-import Business from "./pages/Business";
+import BusinessPage from "./pages/BusinessPage";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: ROUTES.BUSINESS,
-        element: <Business />,
+        element: <BusinessPage />,
       },
     ],
   },

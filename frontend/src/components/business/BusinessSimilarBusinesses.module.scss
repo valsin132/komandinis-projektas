@@ -1,0 +1,20 @@
+.similarBusinessContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  .similarImage {
+    display: inline-block;
+    width: 6.5rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .businessSimilarBlock {
+    display: flex;
+    .businessSimilarInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
