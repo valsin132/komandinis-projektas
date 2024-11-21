@@ -27,13 +27,15 @@ const BusinessHeader = ({ business }: BusinessHeaderProps) => {
         <div className={styles.businessInfoBlock}>
           <p className={styles.category}>{business.category}</p>
           <h1 className={styles.name}>{business.name}</h1>
-          <div className={styles.businessAddressBlock}>
-            <GrLocation className={styles.addressIcon} />
-            <p className={styles.address}>{business.address}</p>
-          </div>
-          <div className={styles.businessEmailBlock}>
-            <HiOutlineMail className={styles.emailIcon} />
-            <p className={styles.email}>{business.email}</p>
+          <div className={styles.businessAddressEmailBlock}>
+            <div className={styles.businessAddressBlock}>
+              <GrLocation className={styles.addressIcon} />
+              <p className={styles.address}>{business.address}</p>
+            </div>
+            <div className={styles.businessEmailBlock}>
+              <HiOutlineMail className={styles.emailIcon} />
+              <p className={styles.email}>{business.email}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -41,13 +43,15 @@ const BusinessHeader = ({ business }: BusinessHeaderProps) => {
         <Button className={styles.uploadingBtn} large>
           <TbUpload className={styles.uploadIcon} />
         </Button>
-        <div className={styles.businessNameBlock}>
-          <GoPerson />
-          <p className={styles.contactPerson}>{business.contactPerson}</p>
-        </div>
-        <div className={styles.businessTimeBlock}>
-          <FiClock />
-          <p>Available 8:00 AM to 10:PM</p>
+        <div className={styles.businessNameTimeBlock}>
+          <div className={styles.businessNameBlock}>
+            <GoPerson className={styles.nameIcon} />
+            <p className={styles.contactPerson}>{business.contactPerson}</p>
+          </div>
+          <div className={styles.businessTimeBlock}>
+            <FiClock className={styles.timeIcon} />
+            <p>Available 8:00 AM to 10:PM</p>
+          </div>
         </div>
       </div>
     </div>

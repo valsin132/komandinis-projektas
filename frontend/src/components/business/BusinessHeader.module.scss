@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 2rem;
     .category {
       display: inline-block;
       font-weight: 600;
@@ -35,16 +35,21 @@
       font-size: 3rem;
       font-weight: 700;
     }
-    .businessAddressBlock,
-    .businessEmailBlock {
+    .businessAddressEmailBlock {
       display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      color: $plain-text-grey;
-      font-size: 1.3rem;
-      .addressIcon,
-      .emailIcon {
-        font-size: 1.8rem;
+      flex-direction: column;
+      gap: 0.8rem;
+      .businessAddressBlock,
+      .businessEmailBlock {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: $plain-text-grey;
+        font-size: 1.3rem;
+        .addressIcon,
+        .emailIcon {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -54,10 +59,32 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 1.5rem;
-  .businessNameBlock,
+  gap: 2rem;
+  .businessNameTimeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.8rem;
+  }
+  .businessNameBlock {
+    display: flex;
+    color: $primary-color;
+    font-size: 1.3rem;
+    align-items: center;
+    gap: 0.6rem;
+    .nameIcon {
+      font-size: 1.8rem;
+    }
+  }
   .businessTimeBlock {
     display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: $plain-text-grey;
+    font-size: 1.3rem;
+    .timeIcon {
+      font-size: 1.8rem;
+    }
   }
   .uploadingBtn {
     display: flex;
