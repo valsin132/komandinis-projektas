@@ -24,8 +24,8 @@ const BusinessSimilarBusinesses = ({
           />
           <div className={styles.businessSimilarInfo}>
             <h3 className={styles.name}>{business.name}</h3>
-            <p className={styles.category}>{business.contactPerson}</p>
-            <p className={styles.category}>{business.address}</p>
+            <p className={styles.contactPerson}>{business.contactPerson}</p>
+            <p className={styles.address}>{business.address}</p>
           </div>
         </div>
         <div className={styles.businessSimilarBlock}>
@@ -36,8 +36,8 @@ const BusinessSimilarBusinesses = ({
           />
           <div className={styles.businessSimilarInfo}>
             <h3 className={styles.name}>{business.name}</h3>
-            <p className={styles.category}>{business.contactPerson}</p>
-            <p className={styles.category}>{business.address}</p>
+            <p className={styles.contactPerson}>{business.contactPerson}</p>
+            <p className={styles.address}>{business.address}</p>
           </div>
         </div>
         <div className={styles.businessSimilarBlock}>
@@ -46,10 +46,10 @@ const BusinessSimilarBusinesses = ({
             alt="Business"
             className={styles.similarImage}
           />
-          <div className={styles.similarBusinessInfo}>
+          <div className={styles.businessSimilarInfo}>
             <h3 className={styles.name}>{business.name}</h3>
-            <p className={styles.category}>{business.contactPerson}</p>
-            <p className={styles.category}>{business.address}</p>
+            <p className={styles.contactPerson}>{business.contactPerson}</p>
+            <p className={styles.address}>{business.address}</p>
           </div>
         </div>
       </div>
