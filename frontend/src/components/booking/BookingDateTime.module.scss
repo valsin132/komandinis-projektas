@@ -1,4 +1,5 @@
 .wrapper {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -20,7 +21,33 @@
     color: #6f6f6f;
 }
 
+.dateTimesContainer {
+    .timesWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem 0;
+
+        .timeButton {
+            font-size: 1rem;
+            color: #6f6f6f;
+            border: 1px solid #6f6f6f;
+            width: 100px;
+            padding: 0.6rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            background-color: inherit;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .active {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}
+
 .bookButton {
-    max-width: 200px;
+    width: 250px;
     font-size: 1.2rem;
 }

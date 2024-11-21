@@ -3,7 +3,6 @@ import { IoCloseOutline } from "react-icons/io5";
 import Modal from "react-modal";
 import styles from "./Sidebar.module.scss";
 
-
 type SidebarProps = {
   children: ReactNode;
   isOpen: boolean;
@@ -18,6 +17,7 @@ const Sidebar = ({ isOpen, onClose, children }: SidebarProps) => {
       contentLabel="Sidebar Modal"
       className={styles.modal}
       overlayClassName={styles.modalOverlay}
+      appElement={document.getElementById("root") as HTMLElement}
     >
       <div className={styles.sidebar}>
         <button className={styles.closeButton} onClick={onClose}>
