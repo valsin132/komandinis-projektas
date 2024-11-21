@@ -19,10 +19,12 @@ const Sidebar = ({ isOpen, onClose, children }: SidebarProps) => {
       overlayClassName={styles.modalOverlay}
       appElement={document.getElementById("root") as HTMLElement}
     >
-      <div className={styles.sidebar}>
-        <button className={styles.closeButton} onClick={onClose}>
-          <IoCloseOutline />
-        </button>
+      <div className={styles.sidebarContainer}>
+        <div className={styles.buttonContainer}>
+          <button className={styles.closeButton} onClick={onClose}>
+            <IoCloseOutline />
+          </button>
+        </div>
         {children}
       </div>
     </Modal>

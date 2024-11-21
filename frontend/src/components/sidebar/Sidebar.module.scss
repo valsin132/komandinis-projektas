@@ -25,14 +25,19 @@
     overflow: scroll;
 }
 
-.sidebar {
+.sidebarContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .closeButton {
-    align-self: flex-end;
     background: none;
     border: none;
     font-size: 1.6rem;
