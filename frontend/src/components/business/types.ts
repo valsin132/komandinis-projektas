@@ -6,5 +6,5 @@ export interface Business {
   category: string;
   contactPerson: string;
   email: string;
-  imageUrls: string[];
+  images: { url: string }[];
 }
